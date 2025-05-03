@@ -1,4 +1,3 @@
-package Trees_GFG;
 
 class Node {
     int val;
@@ -23,6 +22,7 @@ public class nodes {
         c.left = f; c.right = g;
         print(a);
     }
+    // printing using recursion
     public static void print(Node root){
         if(root == null) return;
         System.out.println(root.val);
