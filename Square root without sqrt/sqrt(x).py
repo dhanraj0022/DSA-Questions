@@ -2,6 +2,7 @@ class Solution:
     def mySqrt(self, x: int) -> int:
         if x < 2:
             return x
+            # It is better to give the value of r as x / 2 to find the mid value
         l, r = 1
         while l <= r:
             # Calculating mid value to reduce no of operations
