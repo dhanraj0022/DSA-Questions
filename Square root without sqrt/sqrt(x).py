@@ -2,8 +2,7 @@ class Solution:
     def mySqrt(self, x: int) -> int:
         if x < 2:
             return x
-            # It is better to give the value of r as x / 2 to find the mid value
-        l, r = 1
+        l, r = 1, x
         while l <= r:
             # Calculating mid value to reduce no of operations
             m = (l + r) // 2
@@ -16,4 +15,5 @@ class Solution:
             # If the value of m * m is greater than value of x, r value needs to start from m - 1
             else:
                 r = m - 1
+        return r
         
